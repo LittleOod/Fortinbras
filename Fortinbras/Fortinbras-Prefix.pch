@@ -1,0 +1,7 @@
+//
+// Prefix header for all source files of the 'Fortinbras' target in the 'Fortinbras' project
+//
+
+#ifdef __OBJC__
+    #import <Cocoa/Cocoa.h>
+#endif

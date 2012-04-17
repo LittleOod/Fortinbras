@@ -1,0 +1,452 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		E58D6E3E153D863D009E167F /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E58D6E3D153D863D009E167F /* Cocoa.framework */; };
+		E58D6E48153D863D009E167F /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = E58D6E46153D863D009E167F /* InfoPlist.strings */; };
+		E58D6E4A153D863D009E167F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E58D6E49153D863D009E167F /* main.m */; };
+		E58D6E4E153D863D009E167F /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = E58D6E4C153D863D009E167F /* Credits.rtf */; };
+		E58D6E51153D863D009E167F /* FBAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E58D6E50153D863D009E167F /* FBAppDelegate.m */; };
+		E58D6E54153D863D009E167F /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = E58D6E52153D863D009E167F /* MainMenu.xib */; };
+		E58D6E5C153D863D009E167F /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E58D6E5B153D863D009E167F /* SenTestingKit.framework */; };
+		E58D6E5D153D863D009E167F /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E58D6E3D153D863D009E167F /* Cocoa.framework */; };
+		E58D6E65153D863D009E167F /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = E58D6E63153D863D009E167F /* InfoPlist.strings */; };
+		E58D6E68153D863D009E167F /* FortinbrasTests.m in Sources */ = {isa = PBXBuildFile; fileRef = E58D6E67153D863D009E167F /* FortinbrasTests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		E58D6E5E153D863D009E167F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E58D6E30153D863C009E167F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E58D6E38153D863D009E167F;
+			remoteInfo = Fortinbras;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		E58D6E39153D863D009E167F /* Fortinbras.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Fortinbras.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		E58D6E3D153D863D009E167F /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		E58D6E40153D863D009E167F /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
+		E58D6E41153D863D009E167F /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		E58D6E42153D863D009E167F /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		E58D6E45153D863D009E167F /* Fortinbras-Info.plist */ = {isa = PBXFileReference; path = "Fortinbras-Info.plist"; sourceTree = "<group>"; };
+		E58D6E47153D863D009E167F /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		E58D6E49153D863D009E167F /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		E58D6E4B153D863D009E167F /* Fortinbras-Prefix.pch */ = {isa = PBXFileReference; path = "Fortinbras-Prefix.pch"; sourceTree = "<group>"; };
+		E58D6E4D153D863D009E167F /* en */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; name = en; path = en.lproj/Credits.rtf; sourceTree = "<group>"; };
+		E58D6E4F153D863D009E167F /* FBAppDelegate.h */ = {isa = PBXFileReference; path = FBAppDelegate.h; sourceTree = "<group>"; };
+		E58D6E50153D863D009E167F /* FBAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FBAppDelegate.m; sourceTree = "<group>"; };
+		E58D6E53153D863D009E167F /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		E58D6E5A153D863D009E167F /* FortinbrasTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FortinbrasTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
+		E58D6E5B153D863D009E167F /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
+		E58D6E62153D863D009E167F /* FortinbrasTests-Info.plist */ = {isa = PBXFileReference; path = "FortinbrasTests-Info.plist"; sourceTree = "<group>"; };
+		E58D6E64153D863D009E167F /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		E58D6E66153D863D009E167F /* FortinbrasTests.h */ = {isa = PBXFileReference; path = FortinbrasTests.h; sourceTree = "<group>"; };
+		E58D6E67153D863D009E167F /* FortinbrasTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FortinbrasTests.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		E58D6E36153D863D009E167F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E58D6E3E153D863D009E167F /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E58D6E56153D863D009E167F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E58D6E5C153D863D009E167F /* SenTestingKit.framework in Frameworks */,
+				E58D6E5D153D863D009E167F /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		E58D6E2E153D863C009E167F = {
+			isa = PBXGroup;
+			children = (
+				E58D6E43153D863D009E167F /* Fortinbras */,
+				E58D6E60153D863D009E167F /* FortinbrasTests */,
+				E58D6E3C153D863D009E167F /* Frameworks */,
+				E58D6E3A153D863D009E167F /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		E58D6E3A153D863D009E167F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				E58D6E39153D863D009E167F /* Fortinbras.app */,
+				E58D6E5A153D863D009E167F /* FortinbrasTests.octest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		E58D6E3C153D863D009E167F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E58D6E3D153D863D009E167F /* Cocoa.framework */,
+				E58D6E5B153D863D009E167F /* SenTestingKit.framework */,
+				E58D6E3F153D863D009E167F /* Other Frameworks */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		E58D6E3F153D863D009E167F /* Other Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E58D6E40153D863D009E167F /* AppKit.framework */,
+				E58D6E41153D863D009E167F /* CoreData.framework */,
+				E58D6E42153D863D009E167F /* Foundation.framework */,
+			);
+			name = "Other Frameworks";
+			sourceTree = "<group>";
+		};
+		E58D6E43153D863D009E167F /* Fortinbras */ = {
+			isa = PBXGroup;
+			children = (
+				E58D6E4F153D863D009E167F /* FBAppDelegate.h */,
+				E58D6E50153D863D009E167F /* FBAppDelegate.m */,
+				E58D6E52153D863D009E167F /* MainMenu.xib */,
+				E58D6E44153D863D009E167F /* Supporting Files */,
+			);
+			path = Fortinbras;
+			sourceTree = "<group>";
+		};
+		E58D6E44153D863D009E167F /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				E58D6E45153D863D009E167F /* Fortinbras-Info.plist */,
+				E58D6E46153D863D009E167F /* InfoPlist.strings */,
+				E58D6E49153D863D009E167F /* main.m */,
+				E58D6E4B153D863D009E167F /* Fortinbras-Prefix.pch */,
+				E58D6E4C153D863D009E167F /* Credits.rtf */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		E58D6E60153D863D009E167F /* FortinbrasTests */ = {
+			isa = PBXGroup;
+			children = (
+				E58D6E66153D863D009E167F /* FortinbrasTests.h */,
+				E58D6E67153D863D009E167F /* FortinbrasTests.m */,
+				E58D6E61153D863D009E167F /* Supporting Files */,
+			);
+			path = FortinbrasTests;
+			sourceTree = "<group>";
+		};
+		E58D6E61153D863D009E167F /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				E58D6E62153D863D009E167F /* FortinbrasTests-Info.plist */,
+				E58D6E63153D863D009E167F /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		E58D6E38153D863D009E167F /* Fortinbras */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E58D6E6B153D863D009E167F /* Build configuration list for PBXNativeTarget "Fortinbras" */;
+			buildPhases = (
+				E58D6E35153D863D009E167F /* Sources */,
+				E58D6E36153D863D009E167F /* Frameworks */,
+				E58D6E37153D863D009E167F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Fortinbras;
+			productName = Fortinbras;
+			productReference = E58D6E39153D863D009E167F /* Fortinbras.app */;
+			productType = "com.apple.product-type.application";
+		};
+		E58D6E59153D863D009E167F /* FortinbrasTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E58D6E6E153D863D009E167F /* Build configuration list for PBXNativeTarget "FortinbrasTests" */;
+			buildPhases = (
+				E58D6E55153D863D009E167F /* Sources */,
+				E58D6E56153D863D009E167F /* Frameworks */,
+				E58D6E57153D863D009E167F /* Resources */,
+				E58D6E58153D863D009E167F /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E58D6E5F153D863D009E167F /* PBXTargetDependency */,
+			);
+			name = FortinbrasTests;
+			productName = FortinbrasTests;
+			productReference = E58D6E5A153D863D009E167F /* FortinbrasTests.octest */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		E58D6E30153D863C009E167F /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = FB;
+				LastUpgradeCheck = 0430;
+				ORGANIZATIONNAME = "sliderule software";
+			};
+			buildConfigurationList = E58D6E33153D863C009E167F /* Build configuration list for PBXProject "Fortinbras" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = E58D6E2E153D863C009E167F;
+			productRefGroup = E58D6E3A153D863D009E167F /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				E58D6E38153D863D009E167F /* Fortinbras */,
+				E58D6E59153D863D009E167F /* FortinbrasTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		E58D6E37153D863D009E167F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E58D6E48153D863D009E167F /* InfoPlist.strings in Resources */,
+				E58D6E4E153D863D009E167F /* Credits.rtf in Resources */,
+				E58D6E54153D863D009E167F /* MainMenu.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E58D6E57153D863D009E167F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E58D6E65153D863D009E167F /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		E58D6E58153D863D009E167F /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		E58D6E35153D863D009E167F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E58D6E4A153D863D009E167F /* main.m in Sources */,
+				E58D6E51153D863D009E167F /* FBAppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E58D6E55153D863D009E167F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E58D6E68153D863D009E167F /* FortinbrasTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		E58D6E5F153D863D009E167F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E58D6E38153D863D009E167F /* Fortinbras */;
+			targetProxy = E58D6E5E153D863D009E167F /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		E58D6E46153D863D009E167F /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E58D6E47153D863D009E167F /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		E58D6E4C153D863D009E167F /* Credits.rtf */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E58D6E4D153D863D009E167F /* en */,
+			);
+			name = Credits.rtf;
+			sourceTree = "<group>";
+		};
+		E58D6E52153D863D009E167F /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E58D6E53153D863D009E167F /* en */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+		E58D6E63153D863D009E167F /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E58D6E64153D863D009E167F /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		E58D6E69153D863D009E167F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		E58D6E6A153D863D009E167F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		E58D6E6C153D863D009E167F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Fortinbras/Fortinbras-Prefix.pch";
+				INFOPLIST_FILE = "Fortinbras/Fortinbras-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		E58D6E6D153D863D009E167F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Fortinbras/Fortinbras-Prefix.pch";
+				INFOPLIST_FILE = "Fortinbras/Fortinbras-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		E58D6E6F153D863D009E167F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Fortinbras.app/Contents/MacOS/Fortinbras";
+				FRAMEWORK_SEARCH_PATHS = "$(DEVELOPER_LIBRARY_DIR)/Frameworks";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Fortinbras/Fortinbras-Prefix.pch";
+				INFOPLIST_FILE = "FortinbrasTests/FortinbrasTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Debug;
+		};
+		E58D6E70153D863D009E167F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Fortinbras.app/Contents/MacOS/Fortinbras";
+				FRAMEWORK_SEARCH_PATHS = "$(DEVELOPER_LIBRARY_DIR)/Frameworks";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Fortinbras/Fortinbras-Prefix.pch";
+				INFOPLIST_FILE = "FortinbrasTests/FortinbrasTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		E58D6E33153D863C009E167F /* Build configuration list for PBXProject "Fortinbras" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E58D6E69153D863D009E167F /* Debug */,
+				E58D6E6A153D863D009E167F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E58D6E6B153D863D009E167F /* Build configuration list for PBXNativeTarget "Fortinbras" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E58D6E6C153D863D009E167F /* Debug */,
+				E58D6E6D153D863D009E167F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		E58D6E6E153D863D009E167F /* Build configuration list for PBXNativeTarget "FortinbrasTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E58D6E6F153D863D009E167F /* Debug */,
+				E58D6E70153D863D009E167F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = E58D6E30153D863C009E167F /* Project object */;
+}
