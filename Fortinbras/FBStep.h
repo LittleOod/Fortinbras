@@ -1,0 +1,13 @@
+//
+//  FBStep.h
+//  Fortinbras
+//
+//  Created by Torsten Schlumm on 4/17/12.
+//  Copyright (c) 2012 sliderule software. All rights reserved.
+//
+
+#import "FBHierarchyElement.h"
+
+@interface FBStep : FBHierarchyElement
+
+@end
