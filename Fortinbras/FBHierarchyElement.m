@@ -22,13 +22,13 @@ NSInteger  const FB_ELEMENT_STATE_RUNNING        = 0x4;
 NSInteger  const FB_ELEMENT_STATE_FINISHED       = 0x5;
 
 
-unsigned char        uuid[16];
+uuid_t               uuid;
 NSMutableDictionary *properties;
 NSMutableArray      *children;
 FBHierarchyElement  *parent;
 
 
-@synthesize properties=properties, parent=parent, children=children, uuid=uuid;
+@synthesize properties=properties, parent=parent, children=children;
 
 
 -(NSString*)name
@@ -44,6 +44,13 @@ FBHierarchyElement  *parent;
 -(NSInteger)state
 {
     return [[[self properties] objectForKey:FB_ELEMENT_PROPERTY_STATE] integerValue];
+}
+
+-(NSString*)uuid
+{
+    uuid_string_t uuid_string;
+    uuid_unparse(uuid, uuid_string);
+    return [NSString stringWithUTF8String:uuid_string];
 }
 
 -(id)init
@@ -64,7 +71,7 @@ FBHierarchyElement  *parent;
         [properties setObject: name forKey: FB_ELEMENT_PROPERTY_NAME];
         [properties setObject: comment forKey: FB_ELEMENT_PROPERTY_COMMENT];
         [properties setObject: [NSNumber numberWithInteger: FB_ELEMENT_STATE_UNKNOWN] forKey: FB_ELEMENT_PROPERTY_STATE];
-        uuid_generate((unsigned char*)uuid);
+        uuid_generate(uuid);
     }
     
     return self;
@@ -72,7 +79,7 @@ FBHierarchyElement  *parent;
 
 -(NSString*)description
 {
-    return [NSString stringWithFormat:@"%s: %s (%s)", NSStringFromClass([self class]), [self name], [self description]];
+    return [NSString stringWithFormat:@"%@: %@ (%@, uuid: %@, state: %i)", NSStringFromClass([self class]), [self name], [self comment], [self uuid], [self state]];
 }
 
 @end

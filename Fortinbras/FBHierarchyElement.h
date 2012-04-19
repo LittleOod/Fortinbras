@@ -11,7 +11,7 @@
 @interface FBHierarchyElement : NSObject 
 
     
-@property (readonly) uuid_t   *uuid;
+@property (readonly) NSString *uuid;
 @property (readonly) NSString *name;
 @property (readonly) NSString *comment;
 
