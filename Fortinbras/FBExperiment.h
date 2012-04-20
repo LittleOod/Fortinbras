@@ -6,8 +6,8 @@
 //  Copyright (c) 2012 sliderule software. All rights reserved.
 //
 
-#import "FBHierarchyElement.h"
+#import "FBHierarchyNode.h"
 
-@interface FBExperiment : FBHierarchyElement
+@interface FBExperiment : FBHierarchyNode
 
 @end

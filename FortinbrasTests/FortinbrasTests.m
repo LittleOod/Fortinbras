@@ -7,7 +7,7 @@
 //
 
 #import "FortinbrasTests.h"
-#import "FBHierarchyElement.h"
+#import "FBHierarchyNode.h"
 #import "FBSession.h"
 #import "FBExperiment.h"
 #import "FBStep.h"
@@ -29,17 +29,17 @@
     [super tearDown];
 }
 
-- (void)testFBHierarchyElementCreation
+- (void)testFBHierarchyNodeCreation
 {
 
-    FBHierarchyElement *element001 = [[FBHierarchyElement alloc] init];
-    NSLog(@"element001 -> %@", element001);
+    FBHierarchyNode *node001 = [[FBHierarchyNode alloc] init];
+    NSLog(@"node001 -> %@", node001);
     
-    FBHierarchyElement *element002 = [[FBHierarchyElement alloc] initWithName: @"element002"];
-    NSLog(@"element002 -> %@", element002);
+    FBHierarchyNode *node002 = [[FBHierarchyNode alloc] initWithName: @"node002"];
+    NSLog(@"node002 -> %@", node002);
 
-    FBHierarchyElement *element003 = [[FBHierarchyElement alloc] initWithNameAndComment: @"element003" comment: @"comment for element003"];
-    NSLog(@"element003 -> %@", element003);
+    FBHierarchyNode *node003 = [[FBHierarchyNode alloc] initWithNameAndComment: @"node003" comment: @"comment for node003"];
+    NSLog(@"node003 -> %@", node003);
 
 }
 

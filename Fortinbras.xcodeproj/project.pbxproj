@@ -17,7 +17,7 @@
 		E58D6E5D153D863D009E167F /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E58D6E3D153D863D009E167F /* Cocoa.framework */; };
 		E58D6E65153D863D009E167F /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = E58D6E63153D863D009E167F /* InfoPlist.strings */; };
 		E58D6E68153D863D009E167F /* FortinbrasTests.m in Sources */ = {isa = PBXBuildFile; fileRef = E58D6E67153D863D009E167F /* FortinbrasTests.m */; };
-		E58D6E74153DB260009E167F /* FBHierarchyElement.m in Sources */ = {isa = PBXBuildFile; fileRef = E58D6E73153DB260009E167F /* FBHierarchyElement.m */; };
+		E58D6E74153DB260009E167F /* FBHierarchyNode.m in Sources */ = {isa = PBXBuildFile; fileRef = E58D6E73153DB260009E167F /* FBHierarchyNode.m */; };
 		E58D6E7A153DB39E009E167F /* FBSession.m in Sources */ = {isa = PBXBuildFile; fileRef = E58D6E79153DB39D009E167F /* FBSession.m */; };
 		E58D6E7D153DB3AE009E167F /* FBExperiment.m in Sources */ = {isa = PBXBuildFile; fileRef = E58D6E7C153DB3AE009E167F /* FBExperiment.m */; };
 		E58D6E80153DB3CB009E167F /* FBStep.m in Sources */ = {isa = PBXBuildFile; fileRef = E58D6E7F153DB3CB009E167F /* FBStep.m */; };
@@ -53,8 +53,8 @@
 		E58D6E64153D863D009E167F /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		E58D6E66153D863D009E167F /* FortinbrasTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FortinbrasTests.h; sourceTree = "<group>"; };
 		E58D6E67153D863D009E167F /* FortinbrasTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FortinbrasTests.m; sourceTree = "<group>"; };
-		E58D6E72153DB260009E167F /* FBHierarchyElement.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FBHierarchyElement.h; sourceTree = "<group>"; };
-		E58D6E73153DB260009E167F /* FBHierarchyElement.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FBHierarchyElement.m; sourceTree = "<group>"; };
+		E58D6E72153DB260009E167F /* FBHierarchyNode.h */ = {isa = PBXFileReference; fileEncoding = 4; path = FBHierarchyNode.h; sourceTree = "<group>"; };
+		E58D6E73153DB260009E167F /* FBHierarchyNode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FBHierarchyNode.m; sourceTree = "<group>"; };
 		E58D6E78153DB39D009E167F /* FBSession.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FBSession.h; sourceTree = "<group>"; };
 		E58D6E79153DB39D009E167F /* FBSession.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FBSession.m; sourceTree = "<group>"; };
 		E58D6E7B153DB3AE009E167F /* FBExperiment.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FBExperiment.h; sourceTree = "<group>"; };
@@ -185,8 +185,8 @@
 		E58D6E77153DB2B4009E167F /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				E58D6E72153DB260009E167F /* FBHierarchyElement.h */,
-				E58D6E73153DB260009E167F /* FBHierarchyElement.m */,
+				E58D6E72153DB260009E167F /* FBHierarchyNode.h */,
+				E58D6E73153DB260009E167F /* FBHierarchyNode.m */,
 				E58D6E78153DB39D009E167F /* FBSession.h */,
 				E58D6E79153DB39D009E167F /* FBSession.m */,
 				E58D6E7B153DB3AE009E167F /* FBExperiment.h */,
@@ -308,7 +308,7 @@
 			files = (
 				E58D6E4A153D863D009E167F /* main.m in Sources */,
 				E58D6E51153D863D009E167F /* FBAppDelegate.m in Sources */,
-				E58D6E74153DB260009E167F /* FBHierarchyElement.m in Sources */,
+				E58D6E74153DB260009E167F /* FBHierarchyNode.m in Sources */,
 				E58D6E7A153DB39E009E167F /* FBSession.m in Sources */,
 				E58D6E7D153DB3AE009E167F /* FBExperiment.m in Sources */,
 				E58D6E80153DB3CB009E167F /* FBStep.m in Sources */,
@@ -485,6 +485,7 @@
 				E58D6E6D153D863D009E167F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		E58D6E6E153D863D009E167F /* Build configuration list for PBXNativeTarget "FortinbrasTests" */ = {
 			isa = XCConfigurationList;
@@ -493,6 +494,7 @@
 				E58D6E70153D863D009E167F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
